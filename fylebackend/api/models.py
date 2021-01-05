@@ -11,6 +11,7 @@ class Bank(models.Model):
     city = models.CharField(max_length=50, null=True)
     district = models.CharField(max_length=50, null=True)
     state = models.CharField(max_length=26, null=True)
+    bank_name = models.CharField(max_length=49, null=True)
 
     def __str__(self):
         return self.ifsc
