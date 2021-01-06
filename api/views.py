@@ -3,6 +3,7 @@ from .models import Bank
 from .serializers import BankSerializer
 from rest_framework.generics import ListAPIView
 from django.db import connection, transaction
+from django.http import HttpResponse
 
 
 # return all Bank objects
@@ -23,9 +24,16 @@ class BankListAPIView(ListAPIView):
         q2 = self.request.GET.get("limit")
         q3 = self.request.GET.get("offset")
 
+        if q1 is None:
+            q1 = ""
+
+        if q2 is None or q2 == "" or q3 is None or q3 == "":
+            empty_list = []
+            return empty_list
+
         query = "SELECT * FROM api_bank WHERE \"ifsc\" LIKE '%" + q1 + "%'" + \
                 " OR \"branch\" LIKE '%" + q1 + "%' OR \"address\" LIKE '%" + q1 + "%' OR \"city\" " \
-                "LIKE '%" + q1 + "%' OR \"district\" LIKE '%" + q1 + "%' OR \"state\" LIKE '%" + q1 + \
+                                                                                   "LIKE '%" + q1 + "%' OR \"district\" LIKE '%" + q1 + "%' OR \"state\" LIKE '%" + q1 + \
                 "%' ORDER BY \"ifsc\" LIMIT " + q2 + " OFFSET " + q3
 
         cursor = connection.cursor()
@@ -40,6 +48,11 @@ class BankListAPIView(ListAPIView):
         return query_set
 
     def list(self, request, *args, **kwargs):
+        q2 = self.request.GET.get("limit")
+        q3 = self.request.GET.get("offset")
+        if q2 is None or q2 == "" or q3 is None or q3 == "":
+            return HttpResponse(status=422)
+
         queryset = self.get_queryset()
         serializer = BankSerializer(list(queryset), many=True)
         return Response(serializer.data)
@@ -56,6 +69,13 @@ class BranchNameListAPIView(ListAPIView):
         q2 = self.request.GET.get("limit")
         q3 = self.request.GET.get("offset")
 
+        if q1 is None:
+            q1 = ""
+
+        if q2 is None or q2 == "" or q3 is None or q3 == "":
+            empty_list = []
+            return empty_list
+
         query = "SELECT * FROM api_bank WHERE \"branch\" LIKE '%" + q1 + "%' ORDER BY \"ifsc\" LIMIT " + q2 + " OFFSET " + q3
         cursor = connection.cursor()
         cursor.execute(query)
@@ -69,6 +89,11 @@ class BranchNameListAPIView(ListAPIView):
         return query_set
 
     def list(self, request, *args, **kwargs):
+        q2 = self.request.GET.get("limit")
+        q3 = self.request.GET.get("offset")
+        if q2 is None or q2 == "" or q3 is None or q3 == "":
+            return HttpResponse(status=422)
+
         queryset = self.get_queryset()
         serializer = BankSerializer(list(queryset), many=True)
         return Response(serializer.data)
