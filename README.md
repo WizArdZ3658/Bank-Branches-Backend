@@ -1,5 +1,5 @@
 # Bank Branches Backend
-A Back-End API service for finding banks using search query parameter. People can also set limit and offset for the API response.
+A Back-End API service for finding banks using search query parameter. Users can also set limit and offset for the API response.
 
 # Data Source
 Repository Link : https://github.com/snarayanank2/indian_banks
