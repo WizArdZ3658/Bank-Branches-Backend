@@ -72,22 +72,29 @@ WSGI_APPLICATION = 'fylebackend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+# PostgreSQL DB
+# local DB
+
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'fyle',
+#         'USER': 'postgres',
+#         'PASSWORD': 'root',
+#         'HOST': 'localhost',
+#         'PORT': '5432',
 #     }
 # }
 
-# PostgreSQL DB
+# remote DB hosted at clever cloud
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'fyle',
-        'USER': 'postgres',
-        'PASSWORD': 'root',
-        'HOST': 'localhost',
+        'NAME': 'bjtnfvxlwjhil6edl3sq',
+        'USER': 'uwdvh1kkcdfwbdy2hawc',
+        'PASSWORD': 'TfpKsp0FD5HaEjWz0yHM',
+        'HOST': 'bjtnfvxlwjhil6edl3sq-postgresql.services.clever-cloud.com',
         'PORT': '5432',
     }
 }
