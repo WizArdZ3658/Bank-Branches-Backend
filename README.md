@@ -3,7 +3,8 @@ A backend API service for finding banks using search query parameter. People can
 
 # Data Source
 Repository Link : https://github.com/snarayanank2/indian_banks
-I fetched data from this repository, it has a csv file and a sql dump file. For more information click on the link here.
+
+I fetched data from this repository, it has a csv file and a sql dump file. For more information click on the link [here](https://github.com/snarayanank2/indian_banks).
 
 # API Endpoints
  * /api/branches/autocomplete?q=<>
