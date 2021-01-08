@@ -1,5 +1,5 @@
 # Bank Branches Backend
-A Back-End API Application for finding banks using search query parameter. Users can set limit and offset for the API response. The API has been deployed to https://bankbranchfinder.herokuapp.com.
+A Back-End API Application for getting information on banks using search query parameter. Users can set limit and offset for the API response. The API has been deployed to https://bankbranchfinder.herokuapp.com.
 
 This Back-End API Application is part of a Full Stack Project.
 
