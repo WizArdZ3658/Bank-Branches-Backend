@@ -3,7 +3,7 @@ A Back-End API service for finding banks using search query parameter. Users can
 
 This Front-End Web Application is part of a Full Stack Project.
 
-Website is deployed at Netlify, click [here](https://5ff87ba487cb0300c20072c8--confident-easley-02aacf.netlify.app/) to view.
+The website is deployed at Netlify, click [here](https://5ff87ba487cb0300c20072c8--confident-easley-02aacf.netlify.app/) to view.
 
 ## Data Source
 Repository Link : https://github.com/snarayanank2/indian_banks
