@@ -1,6 +1,8 @@
 # Bank Branches Backend
 A Back-End API service for finding banks using search query parameter. Users can set limit and offset for the API response. The API has been deployed to https://bankbranchfinder.herokuapp.com.
 
+Website is deployed at Netlify, click [here](https://5ff87ba487cb0300c20072c8--confident-easley-02aacf.netlify.app/) to view.
+
 # Data Source
 Repository Link : https://github.com/snarayanank2/indian_banks
 
