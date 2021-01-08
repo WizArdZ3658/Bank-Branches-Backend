@@ -11,8 +11,8 @@ Repository Link : https://github.com/snarayanank2/indian_banks
 I fetched data from this repository, it has a csv file and a sql dump file. For more information click [here](https://github.com/snarayanank2/indian_banks).
 
 ## API Endpoints
- * https://bankbranchfinder.herokuapp.com/api/branches/autocomplete?q=<>
- * https://bankbranchfinder.herokuapp.com/api/branches?q=<>
+ * https://bankbranchfinder.herokuapp.com/api/branches/autocomplete?q=<> [returns possible matches based on the branch name ordered by IFSC code (ascending order) with limit and offset]
+ * https://bankbranchfinder.herokuapp.com/api/branches?q=<> [returns possible matches across all columns and all rows, ordered by IFSC code (ascending order) with limit and offset]
 
 ##### Examples :-
  * https://bankbranchfinder.herokuapp.com/api/branches/autocomplete?q=RTGS&limit=5&offset=0
