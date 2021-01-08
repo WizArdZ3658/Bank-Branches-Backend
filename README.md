@@ -5,7 +5,7 @@ This Back-End API Application is part of a Full Stack Project.
 
 GitHub repo link for Front-End Web Application : https://github.com/WizArdZ3658/Bank-Branches-Frontend
 
-The website is deployed at Netlify, click [here](https://5ff87ba487cb0300c20072c8--confident-easley-02aacf.netlify.app/) to view.
+The website is deployed at Heroku, click [here](https://bankbranchesindia.herokuapp.com/) to view.
 
 ## Data Source
 Repository Link : https://github.com/snarayanank2/indian_banks
