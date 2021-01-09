@@ -28,10 +28,10 @@ The database is hosted on Clever Cloud and the application is hosted on Heroku. 
 
 ## Technology Stack
 ##### Languages :-
-Python, SQL, Git
+Python, SQL
 
 ##### Frameworks, Libraries and Tools:-
-Django, Heroku-CLI, Clever Cloud, PyCharm, Django REST framework, Json
+Django, Heroku-CLI, Clever Cloud, PyCharm, Django REST framework, Json, Git
 
 ##### Databases:-
 PostgreSQL(for development and production)
