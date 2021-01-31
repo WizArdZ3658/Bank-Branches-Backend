@@ -1,9 +1,7 @@
 # Bank Branches Backend
 A Back-End API Application for getting information on banks using search query parameter. Users can set limit and offset for the API response. The API has been deployed to https://bankbranchfinder.herokuapp.com.
 
-This Back-End API Application is part of a Full Stack Project.
-
-GitHub repo link for Front-End Web Application : https://github.com/WizArdZ3658/Bank-Branches-Frontend
+This Back-End API Application is part of a Full Stack Project. GitHub repo link for Front-End Web Application : https://github.com/WizArdZ3658/Bank-Branches-Frontend.
 
 The website is deployed at Heroku, click [here](https://bankbranchesindia.herokuapp.com/) to view.
 
